@@ -73,7 +73,7 @@
     <form class="form">
       <ion-item>
         <ion-label>Seleccionar figura:</ion-label>
-        <ion-select name="forma" placeholder="Seleccionar figura" aria-label="Figura" [(ngModel)]="formData.logoCom" (ngModelChange)="actualizarEstadoBoton()" interface="action-sheet">
+        <ion-select name="forma" placeholder="Seleccionar figura" aria-label="Figura" [(ngModel)]="formData.logoCom" (ngModelChange)="actualizarEstadoBoton()" interface="action-sheet" cancelText="Cancelar">
           <ion-select-option value="square-outline">
             <ion-icon name="square" class="icono-cuadrado"></ion-icon> Cuadrado
           </ion-select-option>
@@ -89,7 +89,7 @@
   
       <ion-item>
         <ion-label>Seleccionar el comando:</ion-label>
-        <ion-select name="comando" placeholder="Seleccionar comando" aria-label="Comando" [(ngModel)]="formData.comando" (ngModelChange)="actualizarEstadoBoton()" interface="action-sheet">
+        <ion-select name="comando" placeholder="Seleccionar comando" aria-label="Comando" [(ngModel)]="formData.comando" (ngModelChange)="actualizarEstadoBoton()" interface="action-sheet" cancelText="Cancelar">
           <ion-select-option value="Ir a dormir" >Tienes que dormir (Clave: Sueño)</ion-select-option>
           <ion-select-option value="Ir a comer" >Tienes que comer (Clave: Comida)</ion-select-option>
           <ion-select-option value="Ir al baño" >Tienes que ir al baño (Clave: Baño)</ion-select-option>

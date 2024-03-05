@@ -24,14 +24,10 @@
     <ion-text class="txt2">Asistente virtual</ion-text>
   </div>
   <div class="container">
-    <ion-text class="tit-tut">Lista de dispositivos Bluetooth:</ion-text>
-    <ion-list lines="inset" >
-      <ion-item *ngFor="let disp of mensaje" >
-        <ion-badge slot="end" (click)="conect(disp.address)">Conectar</ion-badge>
-        <ion-label>{{disp.name}}</ion-label>
-      </ion-item>
-    </ion-list>
+    <ion-text class="tit-tut">Escanear: </ion-text>
+    <ion-button color="success">Escanear</ion-button>
   </div>
+  
   
   <div class="but">
     <ion-button fill="clear" [routerLink]="'/intro'" class="izq" >
